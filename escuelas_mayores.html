@@ -21,39 +21,98 @@
         <img alt="logo" src="imagenes/logo.png" width="240" height="64">
       </div>
     </div></li>
-    <li><a href="patio.html">Patio de escuelas</a></li>
-    <li><a href="#!"><i class="material-icons">check</i>Escuelas Mayores</a></li>
+    <li><a href="patio.html">Patio de Escuelas</a></li>
     <li><a href="escuelas_menores.html">Escuelas Menores</a></li>
-    <li><a href="fachada.html">Fachada Rica</a></li>
-      <li><a href="francisco_salinas.html">Aula Francisco de Salinas</a></li>
-      <li><a href="miguel_unamuno.html">Aula Miguel de Unamuno</a></li>
-      <li><a href="paraninfo.html">Paraninfo</a></li>
-      <li><a href="emblemas.html">Emblemas</a></li>
-      <li><a href="capilla.html">Capilla</a></li>
-      <li><a href="escalera.html">Escalera</a></li>
-      <li><a href="biblioteca.html">Biblioteca</a></li>
+    <li><a href="index.html">Fachada Rica</a></li>
+    <li><a href="#!">Escuelas Mayores<i class="material-icons">check</i></a></li>
+    <li><a href="emblemas.html">Emblemas</a></li>
+    <li><a href="paraninfo.html">Paraninfo</a></li>
+    <li><a href="zaguan.html">Zaguán</a></li>
+    <li><a href="exposiciones.html">Sala de Vitrinas</a></li>
+    <li><a href="capilla.html">Capilla</a></li>
+    <li><a href="francisco_salinas.html">Sala Francisco Salinas</a></li>
+    <li><a href="escalera.html">Escalera</a></li>
+    <li><a href="biblioteca.html">Biblioteca</a></li>
+    <li><a href="vitrinas.html">Vitrinas Claustro Superior</a></li>
+    <li><a href="vitores.html">Vítores</a></li>
     <li><div class="divider"></div></li>
-    <li><a class="subheader">Acercarte / Copyright (c) 2018</a></li>
+    <li><a href="que_es.html">¿Qué es AcercARTE?</a></li>
+     <li><a href="contacto.html">¡Contáctanos!</a></li>
+    <li><a class="subheader">AcercARTE / &copy; 2018 by RIP & PMG</a></li>
   </ul>
   <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
 
 
       <!--Import jQuery before materialize.js-->
 		<div class='content'>
-      <p>
-   <strong>Escuelas Mayores. </strong>
-<br><br>
-Los estudios se dividían en dos grupos,<br><br>
-que se llamaban trivium y quadrivium,<br><br>
-porque eran tres y cuatro asignaturas.<br><br>
-En este edificio se estudiaba el quadrivium:<br><br>
-Medicina, Derecho, Filosofía o Teología.<br><br>
-Los estudiantes que lo acababan, <br><br>
-se convertían en licenciados o doctores<br><br>
-Los cursos anteriores se estudiaban en las Escuelas Menores.<br><br>
+<br>
+  <center><h4>Escuelas Mayores</h4></center><br><br>
+<center><audio controls class="center" id="audioescuelasmayores">
+  <source src="audios/mayores.m4a">
+</audio>
+  <div id="textoescuelasmayores"></div>
+</center>
+  <script src="js/jsEscuelasMayores.js"></script>
 
-  </p>
+
+
+<center>
+<!-- Modal Trigger -->
+  <a class="waves-effect waves-light btn modal-trigger" id="btnUnamuno"  href="#modal1" onclick="audioescuelasmayores.pause(); audioescuelasmayores.currentTime = 0"><b>Aula Miguel de Unamuno</b></a>
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content" style="color:#660A0A">
+
+
+      <h4>Aula Miguel de Unamuno<br></h4><br>
+        
+        <audio controls class="center" id="audiomiguelunamuno">
+  <source src="audios/unamuno.m4a">
+    </audio>
+        <div id="textomiguelunamuno"></div>
+
+    <script src="js/jsMiguelUnamuno.js"></script>
+
+</div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat" onclick="audiomiguelunamuno.pause(); audiomiguelunamuno.currentTime = 0">Cerrar</a>
     </div>
-		
+  </div>
+</center>
+<br><br>
+<center>
+<!-- Modal Trigger -->
+  <a class="waves-effect waves-light btn modal-trigger" id="btnFray"  href="#modal2" onclick="audioescuelasmayores.pause(); audioescuelasmayores.currentTime = 0"><b>Aula Fray Luis de León</b></a>
+
+  <!-- Modal Structure -->
+  <div id="modal2" class="modal">
+    <div class="modal-content" style="color:#660A0A">
+
+
+      <h4>Aula Fray Luis de León<br></h4><br>
+        
+        <audio controls class="center" id="audiofrayluis">
+  <source src="audios/frayluis.m4a">
+    </audio>
+        <div id="textofrayluis"></div>
+    <script src="js/jsFrayLuis.js"></script>
+
+</div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat" onclick="audiofrayluis.pause(); audiofrayluis.currentTime = 0">Cerrar</a>
+    </div>
+  </div>
+</center>
+
+<br><br><br>  
+<hr>
+<br><center>
+1. Máximo nivel de estudios universitarios.<br><br></center>
+    </div>
+		    <footer><center><p id="copyright">
+      &copy; 2018 by Roberto Iglesias Pérez and Pablo Mateos García
+    </p></center>
+    </footer>
     </body>
   </html> 
