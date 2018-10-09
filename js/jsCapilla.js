@@ -1,0 +1,43 @@
+( function(win, doc) {
+            var audioPlayer = doc.getElementById("audiocapilla");
+            var subtitles = doc.getElementById("textocapilla");
+            var syncData = [
+                  {"end": "5","start": "1","text": "\n \n La capilla de la Universidad de Salamanca \n \n es la tercera que se construye.\n \n" },
+                  {"end": "8","start": "6","text": "Es un gran espacio que ocupa dos pisos.\n \n" },
+                  {"end": "13","start": "9","text": "Antes el piso superior era la biblioteca. \n \n" },
+                  {"end": "19","start": "14","text": "La biblioteca estaba en el piso \n \n superior para evitar inundaciones. \n \n" },
+                  {"end": "23","start": "20","text": "Ahí estaba la bóveda del cielo de Salamanca.\n \n" },
+                  {"end": "29","start": "24","text": "Esta bóveda pintada está ahora en \n \n las escuelas menores y queda menos \n \n de la mitad.\n \n" },
+                  {"end": "37","start": "30","text": "Al principio la capilla se utilizaba \n \n  para guardar el dinero de la universidad y \n \n celebrar reuniones de rectores. \n \n" },
+                  {"end": "46","start": "38","text": "También se encuentran  las cenizas del \n \n  famoso escritor y profesor de la Universidad \n \n de Salamanca, Fray Luis de León. \n \n" },
+                  {"end": "50","start": "47","text": "El retablo del fondo es de mármol de colores.\n \n " },
+                  {"end": "57","start": "51","text": "En la parte inferior de este retablo \n \n está el sagrario (1), es de plata.\n \n " },
+                  {"end": "63","start": "58","text": "En el cuadro central aparece la \n \n Virgen María con algunos estudiantes \n \n de la universidad.\n \n " },
+                  {"end": "71","start": "64","text": "Este cuadro se abre y hay un espacio \n \n para enseñar algunos objetos importantes \n \n de las ceremonias religiosas. \n \n \n " },
+                ];
+            createSubtitle();
+
+
+            function createSubtitle()
+            {
+                var element;
+                for (var i = 0; i < syncData.length; i++) {
+                    element = doc.createElement('span');
+                    element.setAttribute("id", "c_" + i);
+                    element.innerText = syncData[i].text + " ";
+                    subtitles.appendChild(element);
+                }
+            }
+
+            audioPlayer.addEventListener("timeupdate", function(e){
+                syncData.forEach(function(element, index, array){
+                    if( audioPlayer.currentTime >= element.start && audioPlayer.currentTime <= element.end )
+                        subtitles.children[index].style.background = '#BF7C5A';
+                        if( audioPlayer.currentTime == audioPlayer.duration || audioPlayer.currentTime == '00.00' )
+                subtitles.children[index].style.background = 'transparent';
+                });
+            });
+        }(window, document));
+
+
+// Copyright 2018 by Roberto Iglesias Pérez and Pablo Mateos García

@@ -88,3 +88,4 @@ Check out the [CONTRIBUTING document](CONTRIBUTING.md) in the root of the reposi
 
 ## Copyright and license
 Code copyright 2017 Materialize. Code released under the MIT license.
+<!-- Copyright 2018 by Roberto Iglesias Pérez and Pablo Mateos García -->

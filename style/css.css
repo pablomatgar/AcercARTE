@@ -1,140 +1,4 @@
-#btnModal1{
-	position: absolute!important;
-	background-color: transparent!important;
-	top:415px;
-	left:168px;
-	color:white!important;
-	font-size: 25px;
-	width: 4px;
-}
 
-#btnModal2{
-	position: absolute!important;
-	background-color: transparent!important;
-	top:330px;
-	left:165px;
-	color:white!important;
-	font-size: 25px;
-	width: 4px;
-}
-
-#btnModal3{
-	position: absolute!important;
-	background-color: transparent!important;
-	top:330px;
-	left:127px;
-	color:white!important;
-	font-size: 25px;
-	width: 4px;
-}
-
-#btnModal4{
-	position: absolute!important;
-	background-color: transparent!important;
-	top:330px;
-	left:200px;
-	width: 4px;
-	color:white!important;
-	font-size: 25px;
-}
-
-#btnModal5{
-	position: absolute!important;
-	background-color: transparent!important;
-	top:330px;
-	left:85px;
-	color:white!important;
-	font-size: 25px;
-	width: 4px;
-}
-
-#btnModal6{
-	position: absolute!important;
-	background-color: transparent!important;
-	top:330px;
-	left:240px;
-	width: 4px;
-	color:white!important;
-	font-size: 25px;
-}
-
-#btnModal7{
-	position: absolute!important;
-	background-color: transparent!important;
-	top:295px;
-	left:92px;
-	width: 4px;
-	color:white!important;
-	font-size: 25px;
-}
-
-#btnModal8{
-	position: absolute!important;
-	background-color: transparent!important;
-	top:295px;
-	left:128px;
-	color:white!important;
-	font-size: 25px;
-	width: 4px;
-}
-
-#btnModal9{
-	position: absolute!important;
-	background-color: transparent!important;
-	top:295px;
-	left:196px;
-	color:white!important;
-	font-size: 25px;
-	width: 4px;
-}
-
-#btnModal10{
-	position: absolute!important;
-	background-color: transparent!important;
-	top:295px;
-	left:236px;
-	color:white!important;
-	font-size: 25px;
-	width: 4px;
-}
-
-#btnModal11{
-	position: absolute!important;
-	background-color: transparent!important;
-	top:235px;
-	left:158px;
-	color:white!important;
-	width: 4px;
-	font-size: 25px;
-}
-
-#btnModal12{
-	position: absolute!important;
-	background-color: transparent!important;
-	top:235px;
-	left:100px;
-	width: 4px;
-	color:white!important;
-	font-size: 25px;
-}
-
-#btnModal13{
-	position: absolute!important;
-	background-color: transparent!important;
-	top:235px;
-	width: 4px;
-	left:218px;
-	color:white!important;
-	font-size: 25px;
-}
-
-#btnModal14{
-	position: absolute!important;
-	background-color: white!important;
-	top:560px;
-	left:208px;
-	color:#660A0A!important;
-}
 
 p{
 	margin:4%;
@@ -151,6 +15,39 @@ body{
 }
 
 #fachada{
-	width:100%;
-	height:100%;
+	width:369px!important;
+	height:492px!important;
 }
+
+#btnUnamuno{
+	position: relative!important;
+	background-color: #BF7C5A!important;
+	color:white!important;
+	font-size: 20px;
+}
+
+#btnFray{
+	position: relative!important;
+	background-color: #BF7C5A!important;
+	color:white!important;
+	font-size: 20px;
+}
+
+#copyright{
+	position:relative;
+	float: bottom;
+	bottom: 0%;
+	font-size:10px;
+}
+
+#copyright2{
+	position:relative;
+	float: bottom;
+	bottom: 0%;
+	color:white;
+	font-size:10px;
+}
+
+
+
+/* Copyright 2018 by Roberto Iglesias Pérez and Pablo Mateos García */
