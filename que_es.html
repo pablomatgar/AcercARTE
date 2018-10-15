@@ -5,9 +5,11 @@
       <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css" media="all"/>
       <link type="text/css" rel="stylesheet" href="style/css.css"/>
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="materialize/js/materialize.min.js"></script>
-    <script src="js/js.js"></script>
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script src="materialize/js/materialize.min.js"></script>
+      <link href="style/introjs.css" rel="stylesheet">
+      <script type="text/javascript" src="js/intro.js"></script>
+      <script src="js/js.js"></script>
     <title>¿Qué es?</title>
     <meta charset="UTF-8">
 
@@ -40,16 +42,17 @@
      <li><a href="contacto.html">¡Contáctanos!</a></li>
     <li><a class="subheader">AcercARTE / &copy; 2018 by RIP & PMG</a></li>
   </ul>
-  <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+  <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons" data-step="1" data-intro="Si haces click aquí, puedes ir a otras partes del edificio.">menu</i></a>
+  <i class="material-icons" id="botonAyuda" onclick="javascript:introJs().start();">help</i>
 
 
       <!--Import jQuery before materialize.js-->
 		<div class='content'>
 <br>
-   <center><h4>¿Qué es AcercARTE?</h4></center>
+   <center><h4 data-step="2" data-intro="Aquí es donde te encuentras.">¿Qué es AcercARTE?</h4></center>
 <br><br>
 <center>
-<iframe width="320" height="180" src="https://www.youtube-nocookie.com/embed/xmo0xUuNICM?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe width="320" height="180" src="https://www.youtube-nocookie.com/embed/8dOcmJpnw1o?rel=0&amp;controls=0&amp;showinfo=0&amp;autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen data-step="3" data-intro="Este es nuestro video de presentación. Para verlo, sólo debes darle al play. Disfrútalo."></iframe>
 
     </div>
 		    <footer><center><p id="copyright">

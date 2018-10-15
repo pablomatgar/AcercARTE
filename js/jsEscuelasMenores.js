@@ -2,9 +2,12 @@
             var audioPlayer = doc.getElementById("audioescuelasmenores");
             var subtitles = doc.getElementById("textoescuelasmenores");
             var syncData = [
-                  {"end": "6","start": "1","text": "\n \n Aquí se estudiaba el “bachillerato” \n\npara después entrar en la Universidad.\n \n" },
-                  {"end": "11","start": "7","text": "Algunas de las asignaturas \n\nque estudiaban eran:\n \n" },
-                  {"end": "15","start": "11","text": "Gramática, música \n\ny retórica (1).\n \n \n" },
+                  {"end": "3","start": "1","text": "\n \n Aquí se estudiaba el “bachillerato” \n\n" },
+                  {"end": "6","start": "4","text": "para después entrar en la Universidad.\n \n" },
+                  {"end": "9","start": "7","text": "Algunas de las asignaturas \n\n" },
+                  {"end": "11","start": "9","text": "que estudiaban eran:\n \n" },
+                  {"end": "13","start": "11","text": "Gramática, música \n\n" },
+                  {"end": "15","start": "13","text": "y retórica (1).\n \n \n" },
                 ];
             createSubtitle();
 

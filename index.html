@@ -5,12 +5,13 @@
       <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css" media="all"/>
       <link type="text/css" rel="stylesheet" href="style/css.css"/>
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="materialize/js/materialize.min.js"></script>
-    <script src="js/js.js"></script>
-    <title>Fachada Rica</title>
-    <meta charset="UTF-8">
-
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script src="materialize/js/materialize.min.js"></script>
+      <link href="style/introjs.css" rel="stylesheet">
+      <script type="text/javascript" src="js/intro.js"></script>
+      <script src="js/js.js"></script>
+      <title>Fachada Rica</title>
+      <meta charset="UTF-8">
     </head>
 
     <body style="color:#660A0A">
@@ -40,14 +41,12 @@
      <li><a href="contacto.html">¡Contáctanos!</a></li>
     <li><a class="subheader">AcercARTE / &copy; 2018 by RIP & PMG</a></li>
   </ul>
-  <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
-
-
-
-
+  <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons" data-step="1" data-intro="Si haces click aquí, puedes ir a otras partes del edificio.">menu</i></a>
+  <i class="material-icons" id="botonAyuda" onclick="javascript:introJs().start();">help</i>
+  
 <center>
       <!--Import jQuery before materialize.js-->
-		<img alt="fachada" src="imagenes/FACHADA.jpg" id="fachada" usemap="#fachadaBotones"><br>><br></center>
+		<img alt="fachada" src="imagenes/FACHADA.jpg" id="fachada" usemap="#fachadaBotones" data-step="2" data-intro="Haciendo click en los números te explicamos con texto y audio las distintas partes de la fachada."></center>
 
 <map name="fachadaBotones">
 	<area shape="circle" class="modal-trigger" coords="197,344,20" href="#modal1" alt="boton 1"/>
@@ -65,17 +64,14 @@
 	<area shape="rect" class="modal-trigger" coords="225,156,262,186" href="#modal13" alt="boton 13"/>
 	<area shape="rect" class="modal-trigger" coords="137,445,347,477" href="#modal14" alt="boton 14"/>
 </map>
+<br><br>
 
-
-
-
-
-  <!-- Modal Structure -->
+  <!-- Modal Structure --><center>
   <div id="modal1" class="modal">
     <div class="modal-content">
 
 
-      <h4>1: Medallón de los Reyes Católicos <br></h4><br>
+      <h4>1. Medallón de los Reyes Católicos <br></h4><br>
         
         <audio controls class="center" id="audio1">
   <source src="audios/1.mp3" type="audio/mp3">
@@ -99,7 +95,7 @@
   <div id="modal2" class="modal">
     <div class="modal-content">
 
-      <h4>2: Blasón (1) del emperador Carlos V <br></h4><br>
+      <h4>2. Blasón (1) del emperador Carlos V <br></h4><br>
 
 <audio controls class="center" id="audio2">
   <source src="audios/2.mp3" type="audio/mp3">
@@ -107,7 +103,7 @@
 
   <div id="texto2fach"></div>
     <hr><br>
-    2. Varios escudos en uno. <br>
+    1. Varios escudos en uno. <br>
     </div>
     <div class="modal-footer">
       <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat" onclick="audio2.pause(); audio2.currentTime = 0">Cerrar</a>
@@ -122,7 +118,7 @@
   <div id="modal3" class="modal">
     <div class="modal-content">
 
-      <h4>3: Escudo del Águila bicéfala <br></h4><br>
+      <h4>3. Escudo del Águila bicéfala <br></h4><br>
     
 <audio controls class="center" id="audio3">
   <source src="audios/3.mp3" type="audio/mp3">
@@ -147,7 +143,7 @@
   <!-- Modal Structure -->
   <div id="modal4" class="modal">
     <div class="modal-content">
-      <h4>4: Escudo del águila <br><br>de San Juan <br></h4><br>
+      <h4>4. Escudo del águila de San Juan <br></h4><br>
 
 <audio controls class="center" id="audio4">
   <source src="audios/4.mp3" type="audio/mp3">
@@ -173,7 +169,7 @@
   <!-- Modal Structure -->
   <div id="modal5" class="modal">
     <div class="modal-content">
-      <h4>5: El medallón de Carlos V <br></h4><br>
+      <h4>5. El medallón de Carlos V <br></h4><br>
 
 <audio controls class="center" id="audio5">
   <source src="audios/5.mp3" type="audio/mp3">
@@ -197,7 +193,7 @@
   <!-- Modal Structure -->
   <div id="modal6" class="modal">
     <div class="modal-content">
-      <h4>6: El medallón de Isabel la Católica o Juana “la Loca” <br><br>
+      <h4>6. El medallón de Isabel la Católica o Juana “la Loca” <br><br>
 </h4>
 
 <audio controls class="center" id="audio6">
@@ -224,7 +220,7 @@
   <!-- Modal Structure -->
   <div id="modal7" class="modal">
     <div class="modal-content">
-      <h4>7: Sibila <br></h4><br>
+      <h4>7. Sibila <br></h4><br>
 
 <audio controls class="center" id="audio7">
   <source src="audios/7.mp3" type="audio/mp3">
@@ -251,7 +247,7 @@
   <!-- Modal Structure -->
   <div id="modal8" class="modal">
     <div class="modal-content">
-      <h4>8: Trajano <br></h4><br>
+      <h4>8. Trajano <br></h4><br>
 <audio controls class="center" id="audio8">
   <source src="audios/8.mp3" type="audio/mp3">
 </audio>
@@ -276,7 +272,7 @@
   <!-- Modal Structure -->
   <div id="modal9" class="modal">
     <div class="modal-content">
-      <h4>9: Escipión <br></h4><br>
+      <h4>9. Escipión <br></h4><br>
 
       <audio controls class="center" id="audio9">
   <source src="audios/8.mp3" type="audio/mp3">
@@ -303,7 +299,7 @@
   <!-- Modal Structure -->
   <div id="modal10" class="modal">
     <div class="modal-content">
-      <h4>10: Marco Aurelio <br><br>
+      <h4>10. Marco Aurelio <br><br>
 </h4>
       <audio controls class="center" id="audio10">
   <source src="audios/8.mp3" type="audio/mp3">
@@ -329,7 +325,7 @@
   <!-- Modal Structure -->
   <div id="modal11" class="modal">
     <div class="modal-content">
-      <h4>11: Imagen del Papa <br></h4><br>
+      <h4>11. Imagen del Papa <br></h4><br>
 
 
 <audio controls class="center" id="audio11">
@@ -356,7 +352,7 @@
   <!-- Modal Structure -->
   <div id="modal12" class="modal">
     <div class="modal-content">
-      <h4>12: Lado de la Diosa Venus <br></h4><br>
+      <h4>12. Lado de la Diosa Venus <br></h4><br>
 <audio controls class="center" id="audio12">
   <source src="audios/12.mp3" type="audio/mp3">
 </audio>
@@ -381,7 +377,7 @@
     <!-- Modal Structure -->
   <div id="modal13" class="modal">
     <div class="modal-content">
-      <h4>13: Lado de Hércules <br></h4><br>
+      <h4>13. Lado de Hércules <br></h4><br>
       
 <audio controls class="center" id="audio13">
   <source src="audios/13.mp3" type="audio/mp3">
@@ -421,10 +417,10 @@
     <div class="modal-footer">
       <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat" onclick="audioinfo.pause(); audioinfo.currentTime = 0">Cerrar</a>
     </div>
-  </div>
+  </div></center>
 
 		    <footer><center><p id="copyright2">
-      &copy; 2018 by Roberto Iglesias Pérez and Pablo Mateos García
+      &copy; 2018 by Roberto Iglesias Pérez and Pablo Mateos García 
     </p></center>
     </footer>
     </body>

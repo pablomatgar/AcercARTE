@@ -1,4 +1,12 @@
+#botonAyuda{
+	position:relative;
+	float:right;
+	color:white;
+}
 
+.material-icons{
+	color:white;
+}
 
 p{
 	margin:4%;

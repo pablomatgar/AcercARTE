@@ -5,9 +5,11 @@
       <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css" media="all"/>
       <link type="text/css" rel="stylesheet" href="style/css.css"/>
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="materialize/js/materialize.min.js"></script>
-    <script src="js/js.js"></script>
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script src="materialize/js/materialize.min.js"></script>
+      <link href="style/introjs.css" rel="stylesheet">
+      <script type="text/javascript" src="js/intro.js"></script>
+      <script src="js/js.js"></script>
     <title>Escalera</title>
     <meta charset="UTF-8">
 
@@ -40,22 +42,23 @@
      <li><a href="contacto.html">¡Contáctanos!</a></li>
     <li><a class="subheader">AcercARTE / &copy; 2018 by RIP & PMG</a></li>
   </ul>
-  <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+  <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons" data-step="1" data-intro="Si haces click aquí, puedes ir a otras partes del edificio.">menu</i></a>
+  <i class="material-icons" id="botonAyuda" onclick="javascript:introJs().start();">help</i>
 
 
       <!--Import jQuery before materialize.js-->
 		<div class='content'>
 <br>
-   <center><h4>La Escalera de la Universidad</h4></center>
+   <center><h4 data-step="2" data-intro="Aquí es donde te encuentras.">La Escalera de la Universidad</h4></center>
 <br>
-   <center><audio controls class="center" id="audioescalera">
+   <center><audio controls class="center" id="audioescalera" data-step="3" data-intro="Si le das al play, puedes escuchar la información de este sitio e irla leyendo más abajo.">
   <source src="audios/escalera.m4a">
 </audio>
-  <div id="textoescalera"></div>
+  <div id="textoescalera" data-step="4" data-intro="Esta es la información de este lugar. Recuerda que puedes desplazarte por esta y todas las páginas deslizando el dedo hacia arriba o hacia abajo para poder leer todo."></div>
 </center>
   <script src="js/jsEscalera.js"></script>
 <hr>
-<br><center>
+<br><center data-step="5" data-intro="Por último, te dejamos aquí algunas definiciones de palabras complicadas que encontrarás en el texto, para que puedas entenderlo todo.">
 1. Partes en las que se <br><br>divide una escalera. <br><br><br><br>
 2. El peregrino representa al <br><br>buen estudiante que llega <br><br>a la Universidad. <br><br><br><br>
 3. Deseo excesivo del placer sexual. <br><br><br><br>

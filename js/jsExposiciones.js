@@ -3,13 +3,17 @@
             var subtitles = doc.getElementById("textoexposiciones");
             var syncData = [
                   {"end": "3","start": "0","text": "\n \n En esta habitación se guardan objetos religiosos,\n \n" },
-                  {"end": "10","start": "5","text": "Estos objetos se utilizaban en las ceremonias \n \n de la capilla de la Universidad.\n \n" },
+                  {"end": "8","start": "5","text": "Estos objetos se utilizaban en las ceremonias \n \n" },
+                  {"end": "10","start": "8","text": "de la capilla de la Universidad.\n \n" },
                   {"end": "14","start": "11","text": "Los objetos de metal se usaban en las misas,\n \n" },
                   {"end": "18","start": "15","text": "como: atriles, copas y cruces.\n \n" },
-                  {"end": "24","start": "20","text": "También se guardan las figuras de \n \n los santos y relicarios (1).\n \n" },
-                  {"end": "29","start": "25","text": "En la habitación destaca <i>el \n \n Arca de Caudales,</i>\n \n" },
+                  {"end": "22","start": "20","text": "También se guardan las figuras de \n \n" },
+                  {"end": "24","start": "22","text": "los santos y relicarios (1).\n \n" },
+                  {"end": "27","start": "25","text": "En la habitación destaca\n \n" },
+                  {"end": "29","start": "27","text": "el Arca de Caudales,\n \n","class":"CURSIVA" },
                   {"end": "32","start": "30","text": "era la antigua caja fuerte.\n \n" },
-                  {"end": "36","start": "33","text": "Se guardaban piezas de valor \n \n y documentos importantes.\n \n \n" },
+                  {"end": "34","start": "33","text": "Se guardaban piezas de valor \n \n" },
+                  {"end": "36","start": "34","text": "y documentos importantes.\n \n \n" },
                 ];
             createSubtitle();
 

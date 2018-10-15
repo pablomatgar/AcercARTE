@@ -2,12 +2,17 @@
             var audioPlayer = doc.getElementById("audiopatio");
             var subtitles = doc.getElementById("textopatio");
             var syncData = [
-                  {"end": "3","start": "0","text": "\n \n En la plaza es donde se encuentran\n \n los edificios históricos\n \n" },
+                  {"end": "2","start": "0","text": "\n \n En la plaza es donde se encuentran\n \n" },
+                  {"end": "3","start": "2","text": "los edificios históricos\n \n" },
                   {"end": "5","start": "4","text": "de la Universidad de Salamanca.\n \n" },
-                  {"end": "11","start": "6","text": "Fueron construidos en el S.XV\n\n (finales de la Edad Media).\n \n" },
-                  {"end": "16","start": "12","text": "En el centro del patio \n\nhay una estatua de Fray Luis,\n \n" },
-                  {"end": "19","start": "16","text": "un intelectual religioso \n\nde la época.\n \n" },
-                  {"end": "24","start": "21","text": "Tambien era profesor \n\nen la Universidad.\n \n" },
+                  {"end": "9","start": "6","text": "Fueron construidos en el S.XV\n\n" },
+                  {"end": "11","start": "9","text": "(finales de la Edad Media).\n \n" },
+                  {"end": "14","start": "12","text": "En el centro del patio \n\n" },
+                  {"end": "16","start": "14","text": "hay una estatua de Fray Luis,\n \n" },
+                  {"end": "18","start": "16","text": "un intelectual religioso\n \n" },
+                  {"end": "19","start": "18","text": "de la época.\n \n" },
+                  {"end": "22","start": "21","text": "Tambien era profesor \n\n" },
+                  {"end": "24","start": "22","text": "en la Universidad.\n \n" },
                 ];
             createSubtitle();
 

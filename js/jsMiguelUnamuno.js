@@ -2,10 +2,18 @@
             var audioPlayer = doc.getElementById("audiomiguelunamuno");
             var subtitles = doc.getElementById("textomiguelunamuno");
             var syncData = [
-                  {"end": "4","start": "1","text": "\n \n Una de las aulas está \n \n dedicada a Miguel \n \n de Unamuno.\n \n" },
-                  {"end": "10","start": "5","text": "Fue catedrático de Griego \n \n y tres veces rector \n \n de la universidad.\n \n" },
-                  {"end": "20","start": "11","text": "Nació en Bilbao en 1864 \n \n y murió en Salamanca en 1936.\n \n" },
-                  {"end": "28","start": "20","text": "Este aula que ahora está \n \n dedicada a Miguel de Unamuno \n \n era donde se enseñaba Derecho \n \n Canónico. \n" },
+                  {"end": "3","start": "1","text": "\n \n Una de las aulas está \n \n" },
+                  {"end": "4","start": "3","text": "dedicada a Miguel \n \n" },
+                  {"end": "5","start": "4","text": "de Unamuno.\n \n" },
+                  {"end": "7","start": "5","text": "Fue catedrático de Griego \n \n" },
+                  {"end": "9","start": "8","text": "y tres veces rector \n \n" },
+                  {"end": "10","start": "9","text": "de la universidad.\n \n" },
+                  {"end": "15","start": "11","text": "Nació en Bilbao en 1864 \n \n" },
+                  {"end": "20","start": "16","text": "y murió en Salamanca en 1936.\n \n" },
+                  {"end": "23","start": "20","text": "Este aula que ahora está \n \n" },
+                  {"end": "25","start": "23","text": "dedicada a Miguel de Unamuno \n \n" },
+                  {"end": "27","start": "25","text": "era donde se enseñaba Derecho \n \n" },
+                  {"end": "28","start": "27","text": "Canónico. \n" },
                 ];
             createSubtitle();
 
